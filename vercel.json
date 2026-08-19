@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "buildCommand": "echo 'Static site'",
+  "outputDirectory": ".",
+  "public": false,
+  "env": [],
+  "functions": {
+    "enviar.php": {
+      "runtime": "php-8.3"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/enviar",
+      "destination": "/enviar.php"
+    }
+  ]
+}
